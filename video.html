@@ -62,33 +62,8 @@ document.createElement('footer');
 
 </head>
 <body>
-<!-----------------Tabing Area----------------------->
-	 <div id="content">
-    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-        <li class="active"><a href="#textChat" data-toggle="tab">Text Chat</a></li>
-        <li><a href="#orange" data-toggle="tab">Audio Chat</a></li>
-        <li><a href="#videoChat" data-toggle="tab">Video Chat</a></li>
-        <li><a href="#videoTextChat" data-toggle="tab">Video with Text Chat</a></li>
 
-    </ul>
-	
-    <div id="my-tab-content" class="tab-content">
-        <div class="tab-pane active" id="textChat">
-            <iframe src="chat.html" style="width:100%;height:1000px;" scrolling="no" >
-			
-			</iframe>
-        </div>
-        <div class="tab-pane" id="orange">
-            <h1>Under Devlopment</h1>
-            
-        </div>
-        <div class="tab-pane" id="videoChat">
-            <iframe src="video.html" style="width:100%;height:900px;" scrolling="no" >
-			
-			</iframe>
-        </div>
-        <div class="tab-pane" id="videoTextChat">
-            <article>
+<article>
 <table>
 <tr>
 <td style="width:90%">
@@ -124,18 +99,7 @@ Create Public Room here
 </td>
 
 <td style="width:10%">
-<!-- Text Chat Area-->
-<section style='overflow:auto; width:500px;height:400px;'>
 
-<!-- local/remote chat container -->
-<div id="ChatDiv"></div>
-</section>
-  <div class="input-group input_bx" id='chatGroup'>
-      <input type="text" placeholder="Type message here" id="textBox" class="form-control">
-      <div class="input-group-addon"> <input type="button" id="btnSendFirebaseMessage" value="Send" class="btn btn-primary">
-     </div>
-    </div>
-	<a href="javascript:void(0)" id='btnProfile'>Set your Name here</a>
 
 
 </td>
@@ -148,39 +112,11 @@ Create Public Room here
 </article>
 
 
-<!--Bootstrap Modal---->
-
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">WebRTC</h4>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="control-label">Your name:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-     
-        </form>
-     
-       
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="btnName">Submit</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!------------------------------------------>
-
         </div>
         
     </div>
+
+
 
 
 
@@ -195,7 +131,7 @@ Create Public Room here
 
 
 <!--Mannual Websocket Configuration-->
-<script src="javascript.js"></script>
+<script src="video.js"></script>
 <!-- commits.js is useless for you! -->
 <script src="//cdn.webrtc-experiment.com/commits.js" async> </script>
 
